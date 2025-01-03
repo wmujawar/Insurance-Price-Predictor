@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/wasimmujawar/Desktop/Case Study/Insaurance/mlruns/116828091641320024/3e8baa3af23844d4b782b424d0c609f3/artifacts
+end_time: 1735711254882
+entry_point_name: ''
+experiment_id: '116828091641320024'
+lifecycle_stage: active
+run_id: 3e8baa3af23844d4b782b424d0c609f3
+run_name: Stacking Regressor with XGBRegressor (depth=4) as Final Estimator
+run_uuid: 3e8baa3af23844d4b782b424d0c609f3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735711248748
+status: 3
+tags: []
+user_id: wasimmujawar

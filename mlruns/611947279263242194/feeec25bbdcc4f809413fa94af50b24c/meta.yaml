@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/wasimmujawar/Desktop/Case Study/Insaurance/mlruns/611947279263242194/feeec25bbdcc4f809413fa94af50b24c/artifacts
+end_time: 1735670010993
+entry_point_name: ''
+experiment_id: '611947279263242194'
+lifecycle_stage: active
+run_id: feeec25bbdcc4f809413fa94af50b24c
+run_name: Random Forest
+run_uuid: feeec25bbdcc4f809413fa94af50b24c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735670009369
+status: 3
+tags: []
+user_id: wasimmujawar

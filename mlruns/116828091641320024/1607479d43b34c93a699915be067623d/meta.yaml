@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/wasimmujawar/Desktop/Case Study/Insaurance/mlruns/116828091641320024/1607479d43b34c93a699915be067623d/artifacts
+end_time: 1735711755698
+entry_point_name: ''
+experiment_id: '116828091641320024'
+lifecycle_stage: active
+run_id: 1607479d43b34c93a699915be067623d
+run_name: Stacking Regressor with ElasticNet(alpha=0.8, l1_ratio=0.2) as Final Estimator
+run_uuid: 1607479d43b34c93a699915be067623d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735711749632
+status: 3
+tags: []
+user_id: wasimmujawar

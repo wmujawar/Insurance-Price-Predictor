@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/wasimmujawar/Desktop/Case Study/Insaurance/mlruns/116828091641320024/c82a88b50b6545ccb5e6fe01ee7c7a57/artifacts
+end_time: 1735711260916
+entry_point_name: ''
+experiment_id: '116828091641320024'
+lifecycle_stage: active
+run_id: c82a88b50b6545ccb5e6fe01ee7c7a57
+run_name: Stacking Regressor with RandomForestRegressor as Final Estimator
+run_uuid: c82a88b50b6545ccb5e6fe01ee7c7a57
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735711254892
+status: 3
+tags: []
+user_id: wasimmujawar

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/wasimmujawar/Desktop/Case Study/Insaurance/mlruns/318920533244766352/0fe25e5cc856421d97ee1c49828deca2/artifacts
+end_time: 1735669138222
+entry_point_name: ''
+experiment_id: '318920533244766352'
+lifecycle_stage: active
+run_id: 0fe25e5cc856421d97ee1c49828deca2
+run_name: Decision Tree
+run_uuid: 0fe25e5cc856421d97ee1c49828deca2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735669136614
+status: 3
+tags: []
+user_id: wasimmujawar

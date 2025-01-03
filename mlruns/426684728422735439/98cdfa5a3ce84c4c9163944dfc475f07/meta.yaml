@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/wasimmujawar/Desktop/Case Study/Insaurance/mlruns/426684728422735439/98cdfa5a3ce84c4c9163944dfc475f07/artifacts
+end_time: 1735668427431
+entry_point_name: ''
+experiment_id: '426684728422735439'
+lifecycle_stage: active
+run_id: 98cdfa5a3ce84c4c9163944dfc475f07
+run_name: XGBoost
+run_uuid: 98cdfa5a3ce84c4c9163944dfc475f07
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735668425917
+status: 3
+tags: []
+user_id: wasimmujawar

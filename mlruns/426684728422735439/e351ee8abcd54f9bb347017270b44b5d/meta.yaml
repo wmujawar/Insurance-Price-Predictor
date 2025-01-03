@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/wasimmujawar/Desktop/Case Study/Insaurance/mlruns/426684728422735439/e351ee8abcd54f9bb347017270b44b5d/artifacts
+end_time: 1735667899370
+entry_point_name: ''
+experiment_id: '426684728422735439'
+lifecycle_stage: active
+run_id: e351ee8abcd54f9bb347017270b44b5d
+run_name: Linear Regression
+run_uuid: e351ee8abcd54f9bb347017270b44b5d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735667897330
+status: 3
+tags: []
+user_id: wasimmujawar

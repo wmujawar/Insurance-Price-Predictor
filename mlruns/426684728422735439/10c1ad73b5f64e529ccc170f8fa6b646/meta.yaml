@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/wasimmujawar/Desktop/Case Study/Insaurance/mlruns/426684728422735439/10c1ad73b5f64e529ccc170f8fa6b646/artifacts
+end_time: 1735668064654
+entry_point_name: ''
+experiment_id: '426684728422735439'
+lifecycle_stage: active
+run_id: 10c1ad73b5f64e529ccc170f8fa6b646
+run_name: GBDT
+run_uuid: 10c1ad73b5f64e529ccc170f8fa6b646
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735668063101
+status: 3
+tags: []
+user_id: wasimmujawar

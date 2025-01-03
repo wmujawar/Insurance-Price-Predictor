@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/wasimmujawar/Desktop/Case Study/Insaurance/mlruns/318920533244766352/49466214eae848c4b1615aac7a934cfa/artifacts
+end_time: 1735669782408
+entry_point_name: ''
+experiment_id: '318920533244766352'
+lifecycle_stage: active
+run_id: 49466214eae848c4b1615aac7a934cfa
+run_name: Voting Regressor
+run_uuid: 49466214eae848c4b1615aac7a934cfa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735669780522
+status: 3
+tags: []
+user_id: wasimmujawar
