@@ -9,6 +9,8 @@ on:
       - templates/index.html
       - static/js/main.js
       - static/css/style.css
+      - output/model.pkl
+      - output/metrics.json
 
 env:
   AWS_REGION: us-east-1
