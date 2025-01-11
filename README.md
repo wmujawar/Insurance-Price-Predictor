@@ -49,7 +49,7 @@ To set up this project and install all the required dependencies, use the follow
    cd Insurance-Price-Predictor
    ```
 
-2. **Create a virtual environment (optional but recommended):**:
+2. **Create a virtual environment (optional but recommended):**
 
    If you are using Python 3, create a virtual environment to avoid conflicts with other packages on your system:
 
@@ -84,7 +84,7 @@ To set up this project and install all the required dependencies, use the follow
    pytest
    ```
 
-5. **Flask API:**:
+5. **Flask API:**
    To start flask api, run
 
    ```bash
