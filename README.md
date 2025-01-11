@@ -94,16 +94,16 @@ To set up this project and install all the required dependencies, use the follow
 ## View models and their performance using MLFlow
 
 ### 1. Install MLFlow
-    Install MLFlow
+Install MLFlow
 
-    ```bash
-    pip install mlflow
-    ```
+```bash
+pip install mlflow
+```
 
 ### 2. View Results
-    Run `notebooks/06_visualize_mlflow_matrix.ipynb` to visualize model performance
-    
-    [Visualize Models performance](notebooks/06_visualize_mlflow_matrix.ipynb)
+Run `notebooks/06_visualize_mlflow_matrix.ipynb` to visualize model performance
+
+[Visualize Models performance](notebooks/06_visualize_mlflow_matrix.ipynb)
 
 
 ## Docker Setup: Build and Run a Container
