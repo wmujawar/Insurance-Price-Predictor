@@ -91,6 +91,21 @@ To set up this project and install all the required dependencies, use the follow
    python src/app.py
    ```
 
+## View models and their performance using MLFlow
+
+### 1. Install MLFlow
+    Install MLFlow
+
+    ```bash
+    pip install mlflow
+    ```
+
+### 2. View Results
+    Run `notebooks/06_visualize_mlflow_matrix.ipynb` to visualize model performance
+    
+    [Visualize Models performance](notebooks/06_visualize_mlflow_matrix.ipynb)
+
+
 ## Docker Setup: Build and Run a Container
 To containerize the application and ensure it runs in any environment, you can use Docker. Below are the steps to build a Docker image and run a container.
 
