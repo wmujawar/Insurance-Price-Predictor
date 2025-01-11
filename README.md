@@ -54,7 +54,7 @@ To set up this project and install all the required dependencies, use the follow
    If you are using Python 3, create a virtual environment to avoid conflicts with other packages on your system:
 
    ```bash
-   python3 -m venv venv
+   python -m venv venv
    source venv/bin/activate   # On Windows use `venv\Scripts\activate`
 
    ```
