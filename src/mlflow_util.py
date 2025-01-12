@@ -1,4 +1,5 @@
 import mlflow
+import os
 
 
 def setup_mlflow_experiment(exp_name: str, exp_description: str) -> mlflow.entities.Experiment:
