@@ -128,3 +128,23 @@ docker run -d -p 5000:5000 insurance-price-prediction
 ```
 
 This command starts a Docker container based on the `insurance-price-prediction` image and maps port 5000 of the container to port 5000 on your local machine. The Flask API will be accessible at `http://localhost:5000`.
+
+## Running the Streamlit App
+
+To run the Streamlit app, follow these steps:
+
+### 1. **Ensure that you have Streamlit installed. If not, you can install it via pip:**
+
+   ```bash
+   pip install streamlit
+   ```
+
+### 2. **Navigate to the project directory where the `src/streamlit_app.py` file is located.**
+
+### 3. **Run the Streamlit app using the following command:**
+
+   ```bash
+   streamlit run src/streamlit_app.py
+   ```
+
+### 4. **This will launch the app in your default web browser, where you can interact with it.**
