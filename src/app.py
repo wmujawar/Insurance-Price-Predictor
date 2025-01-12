@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from flask import Flask, request, render_template
-from src.model import Model
+from model import Model
 
 app = Flask(__name__, template_folder=os.path.join(os.getcwd(), 'templates'), static_folder=os.path.join(os.getcwd(), 'static'))
 
@@ -60,4 +60,4 @@ def _validate_input(data):
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=False, port=5004)
