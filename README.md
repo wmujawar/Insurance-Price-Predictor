@@ -131,20 +131,20 @@ This command starts a Docker container based on the `insurance-price-prediction`
 
 ## Running the Streamlit App
 
-To run the Streamlit app, follow these steps:
+To run the Streamlit app, follow these instructions:
 
-### 1. **Ensure that you have Streamlit installed. If not, you can install it via pip:**
+### 1. **Install Streamlit**
+Ensure that you have Streamlit installed. If not, you can install it via pip:
 
-   ```bash
-   pip install streamlit
-   ```
+```bash
+pip install streamlit
+```
 
-### 2. **Navigate to the project directory where the `src/streamlit_app.py` file is located.**
+### 2. **Run the Streamlit app:**
+Navigate to the root directory of the project and run Streamlit app using following command.
 
-### 3. **Run the Streamlit app using the following command:**
+```bash
+streamlit run src/streamlit_app.py
+```
 
-   ```bash
-   streamlit run src/streamlit_app.py
-   ```
-
-### 4. **This will launch the app in your default web browser, where you can interact with it.**
+This will launch the app in the default web browser.
