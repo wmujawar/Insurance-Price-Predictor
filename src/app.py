@@ -60,4 +60,4 @@ def _validate_input(data):
 
 
 if __name__ == '__main__':
-    app.run(debug=False, port=5004)
+    app.run(debug=False)
