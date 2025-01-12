@@ -33,3 +33,25 @@ def root_mean_squared_error(y_true: np.ndarray, y_pred: np.ndarray) -> float:
     float: RMSE.
     """
     return np.sqrt(mean_squared_error(y_true, y_pred))
+
+        
+def generate_html_performance_report(rmse, r2_score, adjusted_r2_score):
+    """
+    Generate an HTML report containing train performance metrics.
+    
+    Parameters:
+    - title: Title of the report
+    - rmse: The RMSE score.
+    - r2_score: The R² (R-squared) score.
+    - adjusted_r2_score: The Adjusted R² score.
+    
+    Returns:
+    - A string containing the HTML content.
+    """
+    html_content = f"""
+    <p>RMSE: {rmse:.2f}</p>
+    <p>R²: {r2_score:.4f}</p>
+    <p>Adjusted R²: {adjusted_r2_score:.4f}</p>
+    """
+    return html_content
+

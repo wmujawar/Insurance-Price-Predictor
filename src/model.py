@@ -12,7 +12,7 @@ from sklearn.preprocessing import StandardScaler
 
 import pickle
 
-from src.utils import r2_and_adjusted_r2_score as score, root_mean_squared_error as rmse
+from utils import r2_and_adjusted_r2_score as score, root_mean_squared_error as rmse
 
 import json
 import xgboost as xgb

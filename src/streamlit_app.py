@@ -1,16 +1,20 @@
-import streamlit as st
-import json
 import os
-from model import Model
+import json
 import pandas as pd
+import streamlit as st
 
-st.title(':blue[Premium Price Prediction]')
-
-col1, col2= st.columns([5, 3], vertical_alignment="top", border=True, gap='medium')
-
+from model import Model
+from utils import generate_html_performance_report
 
 medical_conditions = ['Diabetic', 'Blood Pressure', 'Transplant', 'Chronic Disease', 'Allergies', 'History of Cancer in Family']
 
+# Set title
+st.title(':blue[Premium Price Prediction]')
+
+# Create two columns
+col1, col2= st.columns([5, 3], vertical_alignment="top", border=True, gap='medium')
+
+# Create column 1
 with col1:
     # Age
     age = st.number_input('Age (Years):', min_value=18, max_value=100)
@@ -59,29 +63,8 @@ with col1:
         # Show prediction
         st.write(f'Estimated Premium: &#8377; {prediction[0]:.2f}')
 
-        
-def generate_html_performance_report(title, rmse, r2_score, adjusted_r2_score):
-    """
-    Generate an HTML report containing train performance metrics.
-    
-    Parameters:
-    - title: Title of the report
-    - rmse: The RMSE score.
-    - r2_score: The R² (R-squared) score.
-    - adjusted_r2_score: The Adjusted R² score.
-    
-    Returns:
-    - A string containing the HTML content.
-    """
-    html_content = f"""
-    <h4>{title}</h4>
-    <p>RMSE: {rmse:.2f}</p>
-    <p>R²: {r2_score:.4f}</p>
-    <p>Adjusted R²: {adjusted_r2_score:.4f}</p>
-    """
-    return html_content
 
-
+# Create column 2
 with col2:
     
     parent_dir = os.path.abspath(os.path.join(os.getcwd()))
@@ -96,5 +79,8 @@ with col2:
     
     st.html('<h3>Model Performance</h3>')
     
-    st.html(generate_html_performance_report('Train Performance', train['RMSE'], train['R2'], train['Adjusted R2']))
-    st.html(generate_html_performance_report('Test Performance', test['RMSE'], test['R2'], test['Adjusted R2']))
+    train_expander = st.expander("Train Performance", expanded=False)
+    train_expander.html(generate_html_performance_report(train['RMSE'], train['R2'], train['Adjusted R2']))
+    
+    test_expander = st.expander("Test Performance", expanded=False)
+    test_expander.html(generate_html_performance_report(test['RMSE'], test['R2'], test['Adjusted R2']))
