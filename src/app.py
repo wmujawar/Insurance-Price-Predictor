@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from flask import Flask, request, render_template
-from model import Model
+from src.model import Model
 
 app = Flask(__name__, template_folder=os.path.join(os.getcwd(), 'templates'), static_folder=os.path.join(os.getcwd(), 'static'))
 
