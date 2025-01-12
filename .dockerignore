@@ -18,3 +18,5 @@ python_env.yaml
 .gitignore
 secret
 src/streamlit_app.py
+tableau/*
+conda.yaml
