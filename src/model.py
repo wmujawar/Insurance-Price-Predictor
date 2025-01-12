@@ -206,6 +206,29 @@ class Model:
         
         with open(model_path, 'wb') as file:
             pickle.dump(model, file)
+        
+    
+    def predict(self, df):
+        """
+        Predicts the target values for new data using a trained machine learning model.
+        
+        Parameters
+        ----------
+        df : pd.DataFrame
+            The new data to be predicted.
+            
+        Returns
+        -------
+        np.ndarray
+            The predicted target values.
+        """
+        
+        # Load model
+        with open(os.path.join(os.getcwd(), 'output', 'model.pkl'), 'rb') as model_file:
+            model = pickle.load(model_file)
+
+        # Make prediction
+        return model.predict(df)
 
 
 

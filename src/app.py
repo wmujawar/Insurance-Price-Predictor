@@ -1,7 +1,7 @@
 import os
-import pickle
 import pandas as pd
 from flask import Flask, request, render_template
+from model import Model
 
 app = Flask(__name__, template_folder=os.path.join(os.getcwd(), 'templates'), static_folder=os.path.join(os.getcwd(), 'static'))
 
@@ -21,17 +21,13 @@ def predict():
         return response, status_code, headers
     
     df = pd.DataFrame.from_dict(data, orient='index').T
-    
-    # Load model
-    with open(os.path.join(os.getcwd(), 'output', 'model.pkl'), 'rb') as model_file:
-        model = pickle.load(model_file)
 
     # Make prediction
+    model = Model()
     prediction = model.predict(df)
     
     # Return prediction
     return str(prediction), 200, {'Content-Type': 'text/plain'}
-
 
 
 def _validate_input(data):
