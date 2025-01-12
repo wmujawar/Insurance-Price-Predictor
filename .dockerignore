@@ -12,11 +12,11 @@ notebooks
 mlruns
 data
 README.md
-src/model.py
 setup.py
 python_env.yaml
 .gitignore
 secret
 src/streamlit_app.py
-tableau/*
+src/mlflow_util.py
+tableau
 conda.yaml

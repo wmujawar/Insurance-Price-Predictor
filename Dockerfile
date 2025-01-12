@@ -1,6 +1,9 @@
 FROM python:3.12.8-slim
 
 ENV PATH="/usr/local/bin:${PATH}"
+ENV PYTHONPATH=/app/src:$PYTHONPATH
+ENV FLASK_APP=src/app.py
+ENV FLASK_ENV=production
 
 WORKDIR /app
 
@@ -10,6 +13,4 @@ RUN python -m pip install --upgrade pip && python -m pip install -r requirements
 
 EXPOSE 5000
 
-ENV FLASK_ENV=production
-
-CMD ["python", "src/app.py"]
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
