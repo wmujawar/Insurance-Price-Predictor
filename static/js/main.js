@@ -20,12 +20,12 @@ form.addEventListener('submit', function(event) {
     // Create a JSON object to send in the request
     const requestData = {
         Age: parseInt(age),
-        Height: parseInt(height),
-        Weight: parseInt(weight),
         Diabetes: parseInt(diabetic),
         BloodPressureProblems: parseInt(bloodpressure),
         AnyTransplants: parseInt(transplant),
         AnyChronicDiseases: parseInt(chronic),
+        Height: parseInt(height),
+        Weight: parseInt(weight),
         KnownAllergies: parseInt(allergy),
         HistoryOfCancerInFamily: parseInt(cancer),
         NumberOfMajorSurgeries: parseInt(numberOfSurgeries)

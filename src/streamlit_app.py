@@ -44,12 +44,12 @@ with col1:
         # Get prediction
         requestData = dict(
             Age = int(age),
-            Height = int(height),
-            Weight = int(weight),
             Diabetes = diabetes,
             BloodPressureProblems = blood_pressure,
             AnyTransplants = transplant,
             AnyChronicDiseases = chronic_disease,
+            Height = int(height),
+            Weight = int(weight),
             KnownAllergies = allergy,
             HistoryOfCancerInFamily = cancer_history,
             NumberOfMajorSurgeries = int(surgeries)

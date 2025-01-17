@@ -7,7 +7,6 @@ app = Flask(__name__, template_folder=os.path.join(os.getcwd(), 'templates'), st
 
 @app.route('/', methods=['GET'])
 def home():
-    html_file = os.path.join(os.getcwd(), 'templates', 'index.html')
     return render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
