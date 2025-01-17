@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/wasimmujawar/Projects/Insurance-Price-Predictor/mlruns/759679825484628345/6673d02f21ca4205b4a644fd5971f543/artifacts
+end_time: 1737152969940
+entry_point_name: ''
+experiment_id: '759679825484628345'
+lifecycle_stage: active
+run_id: 6673d02f21ca4205b4a644fd5971f543
+run_name: XGBoost
+run_uuid: 6673d02f21ca4205b4a644fd5971f543
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737152968412
+status: 3
+tags: []
+user_id: wasimmujawar

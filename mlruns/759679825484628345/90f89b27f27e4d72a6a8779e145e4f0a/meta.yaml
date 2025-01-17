@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/wasimmujawar/Projects/Insurance-Price-Predictor/mlruns/759679825484628345/90f89b27f27e4d72a6a8779e145e4f0a/artifacts
+end_time: 1737152318427
+entry_point_name: ''
+experiment_id: '759679825484628345'
+lifecycle_stage: active
+run_id: 90f89b27f27e4d72a6a8779e145e4f0a
+run_name: GBDT
+run_uuid: 90f89b27f27e4d72a6a8779e145e4f0a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737152316679
+status: 3
+tags: []
+user_id: wasimmujawar

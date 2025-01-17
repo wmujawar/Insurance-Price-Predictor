@@ -1,0 +1,31 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.1
+mlflow_version: 2.19.0
+model_size_bytes: 277889
+model_uuid: d7e112fc940f4b6d91a4b6e824c030da
+run_id: 0e336d532b004ac3b4e586a071317d00
+signature:
+  inputs: '[{"type": "long", "name": "Age", "required": true}, {"type": "long", "name":
+    "Diabetes", "required": true}, {"type": "long", "name": "BloodPressureProblems",
+    "required": true}, {"type": "long", "name": "AnyTransplants", "required": true},
+    {"type": "long", "name": "AnyChronicDiseases", "required": true}, {"type": "long",
+    "name": "Height", "required": true}, {"type": "double", "name": "Weight", "required":
+    true}, {"type": "long", "name": "KnownAllergies", "required": true}, {"type":
+    "long", "name": "HistoryOfCancerInFamily", "required": true}, {"type": "long",
+    "name": "NumberOfMajorSurgeries", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2025-01-17 22:24:42.362373'

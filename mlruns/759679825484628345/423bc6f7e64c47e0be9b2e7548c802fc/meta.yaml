@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/wasimmujawar/Projects/Insurance-Price-Predictor/mlruns/759679825484628345/423bc6f7e64c47e0be9b2e7548c802fc/artifacts
+end_time: 1737152199842
+entry_point_name: ''
+experiment_id: '759679825484628345'
+lifecycle_stage: active
+run_id: 423bc6f7e64c47e0be9b2e7548c802fc
+run_name: Random Forest
+run_uuid: 423bc6f7e64c47e0be9b2e7548c802fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737152198256
+status: 3
+tags: []
+user_id: wasimmujawar
