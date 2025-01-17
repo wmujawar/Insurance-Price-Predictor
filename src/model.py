@@ -3,12 +3,10 @@ from typing import Tuple
 import numpy as np
 import pandas as pd
 
-from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import GradientBoostingRegressor, RandomForestRegressor, StackingRegressor
 from sklearn.linear_model import ElasticNet
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import StandardScaler
 
 import pickle
 
@@ -97,7 +95,7 @@ class Model:
         
         
         
-    def create_model(self, alpha: float, l1_ratio: float) -> Pipeline:
+    def create_model(self, alpha: float, l1_ratio: float) -> StackingRegressor:
         """
         Creates a machine learning model pipeline with specified hyperparameters.
         
@@ -110,38 +108,26 @@ class Model:
             
         Returns
         -------
-        Pipeline
+        StackingRegressor
             The machine learning model pipeline.
         """
         
         # Define the base learners and the final estimator
         base_learner = [
-            ('gb1', GradientBoostingRegressor(n_estimators=100, max_depth=4, learning_rate=0.2, loss='huber')),
-            ('gb2', GradientBoostingRegressor(n_estimators=80, max_depth=5, learning_rate=0.3, loss='huber')),
-            ('gb3', GradientBoostingRegressor(n_estimators=120, max_depth=4, learning_rate=0.2, loss='huber')),
-            ('rd1', RandomForestRegressor(n_estimators=100, max_depth=6, n_jobs=-1)),
-            ('rd2', RandomForestRegressor(n_estimators=110, max_depth=6, n_jobs=-1)),
-            ('xg', xgb.XGBRegressor(max_depth=4, n_estimators=80, learning_rate=0.05, reg_alpha=0.7, reg_lambda=0.1))
+            ('gb1', GradientBoostingRegressor(n_estimators=110, max_depth=5, learning_rate=0.1, loss='huber')),
+            ('gb2', GradientBoostingRegressor(n_estimators=120, max_depth=5, learning_rate=0.1, loss='huber')),
+            ('rd1', RandomForestRegressor(n_estimators=100, max_depth=7, n_jobs=-1)),
+            ('rd2', RandomForestRegressor(n_estimators=90, max_depth=7, n_jobs=-1)),
+            ('xg1', xgb.XGBRegressor(max_depth=6, n_estimators=90, learning_rate=0.03, reg_alpha=0.5, reg_lambda=0.7)),
+            ('xg2', xgb.XGBRegressor(max_depth=6, n_estimators=80, learning_rate=0.04, reg_alpha=0.1, reg_lambda=0.7))
         ]
 
         final_estimator = ElasticNet(alpha=alpha, l1_ratio=l1_ratio, max_iter=5000)
 
-        # Define the preprocessor
-        numeric_columns = ['Age', 'Height', 'Weight']
-        binary_columns = ['Diabetes', 'BloodPressureProblems', 'AnyTransplants', 'AnyChronicDiseases', 'KnownAllergies', 'HistoryOfCancerInFamily', 'NumberOfMajorSurgeries']
-
-        preprocessor = ColumnTransformer([
-            ('scaler', StandardScaler(), numeric_columns),
-            ('passthrough', 'passthrough', binary_columns)
-        ])
-
         # Define the pipeline
-        pipeline = Pipeline([
-            ('preprocess', preprocessor),
-            ('regressor', StackingRegressor(estimators=base_learner, final_estimator=final_estimator))
-        ])
+        model = StackingRegressor(estimators=base_learner, final_estimator=final_estimator)
         
-        return pipeline
+        return model
     
     
     def evaluate(self, y_true: pd.Series, y_pred: pd.Series, n: int, p: int) -> Tuple[float, float, float]:
