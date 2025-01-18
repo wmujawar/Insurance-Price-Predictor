@@ -1,3 +1,0 @@
-The goal is to predict the PremiumPrice based on the given features.
-Data is splitted using the Age feature to ensure that the distribution of Age is similar in both train and test sets.
-There are no engineered features in this experiment.
