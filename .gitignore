@@ -8,4 +8,4 @@ __pycache__
 *.log
 notebooks/.ipynb_checkpoints
 secret
-mlrun/*
+mlruns/*
