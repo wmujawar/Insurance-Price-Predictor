@@ -1,3 +1,0 @@
-The goal is to predict the PremiumPrice based on the given features.
-There is no stratification technique used in the experiment
-Feature engineering is done to create new features like BMI and MajorSurgeryDone
