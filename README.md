@@ -106,7 +106,7 @@ Run `notebooks/06_visualize_mlflow_matrix.ipynb` to visualize model performance
 [Visualize Models performance](notebooks/06_visualize_mlflow_matrix.ipynb)
 
 
-## Docker Setup: Build and Run a Container
+## Docker Setup: Build and Run a docker container
 To containerize the application and ensure it runs in any environment, you can use Docker. Below are the steps to build a Docker image and run a container.
 
 ### 1. **Build the Docker Image**
@@ -128,6 +128,28 @@ docker run -d -p 5000:5000 insurance-price-prediction
 ```
 
 This command starts a Docker container based on the `insurance-price-prediction` image and maps port 5000 of the container to port 5000 on your local machine. The Flask API will be accessible at `http://localhost:5000`.
+
+
+## Podman Setup: Build and Run a podman container
+Additionally you can also run the application on podman. Podman (short for Pod Manager) is an open-source container management tool similar to Docker
+
+### 1. **Build the Podman Image**
+In the terminal, navigate to the directory containing the `Dockerfile` and run the following command to build the Docker image:
+
+```bash
+podman build -t insurance-price-predictor .
+```
+
+This command tells Podman to build an image with the tag `insurance-price-prediction` using the current directory (denoted by `.`) as the context.
+
+### 2. **Run the Podman container**
+
+After the image is built, run the container:
+
+```bash
+podman run -d -p 5000:5000 localhost/insurance-price-predictor
+```
+
 
 ## Running the Streamlit App
 
